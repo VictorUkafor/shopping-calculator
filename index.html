@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta name="description" content="Shopping Calculator"/>
+        <title>Shopping Calculator</title>
+        <link href="styles.css" rel="stylesheet" /> 
+        <!-- <script src='script.js'></script> -->
+    </head>
+    <body>
+
+        <!-- heading -->
+       <h1 class="calculator-heading">Shopping Calculator</h1>
+
+       <!-- form for adding items -->
+        <form name="calculator" class="calculator-form" onsubmit="return addItem()" >
+            <div id="message"></div>
+            <input name="item" id="item" type="text" class="input-field" placeholder=" Item Name">
+            <input name="price" id="price" type="text" class="input-field" placeholder=" Price">
+            <input name="qty" id="qty" type="text" class="input-field" placeholder=" Quantity">
+            
+            <button type="submit" class="add-button">Add Items</button>
+        </form>
+        
+        <!-- table for displaying items in shopping cart -->
+        <table id="show-div"></table> 
+
+        <!-- button for clearing cart -->
+        <div id="clear"></div>
+        
+      <script src='script.js'></script>
+    </body>
+</html>
